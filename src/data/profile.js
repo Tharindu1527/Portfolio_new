@@ -103,6 +103,7 @@ export const projects = [
       "Fine-tuned a small language model using QLoRA with GRPO and PPO reward-based optimisation, implementing custom reward functions and evaluating alignment quality across multiple checkpoints.",
     metric: "Validated training stability & alignment gains across all checkpoints",
     featured: true,
+    links: [{ label: "GitHub", url: "https://github.com/Tharindu1527/SLM_Fine_tuning_using_With_QLoRA_and_RL_Optimizations-GRPO-PPO-" }],
   },
   {
     id: "meetingminute",
@@ -112,6 +113,7 @@ export const projects = [
       "Real-world meeting summariser built on a CrewAI multi-agent system (4 crews, 8 agents) in sequential processing, integrating AssemblyAI for transcription and a TTS API for audio output. OpenAI as the LLM backbone, Qdrant for semantic retrieval, MongoDB for persistence, Composio for automated email triggers.",
     metric: "Finalist — Veracity Group Gen AI Hackathon (top 15 of 70+ teams)",
     featured: true,
+    links: [{ label: "GitHub", url: "https://github.com/Tharindu1527/Meeting-Minute-AI-Hackathon-Final" }],
   },
   {
     id: "multilingual-chatbot",
@@ -121,6 +123,7 @@ export const projects = [
       "Production chatbot supporting 5 languages with cross-session memory persistence via MongoDB, live on Hugging Face Spaces. Google Gemini for generation, LangChain for orchestration.",
     metric: "Sub-2s response latency across all language pairs",
     featured: false,
+    links: [{ label: "GitHub", url: "https://github.com/Tharindu1527/AI-Chatbot-With-Memory" }],
   },
   {
     id: "rag-pdf-tools",
@@ -130,15 +133,90 @@ export const projects = [
       "PDF Research Assistant (GroqLM + LangChain) with vector-based retrieval and conversation memory for document Q&A. Plus QBot — a PDF query chatbot using HuggingFace embeddings and Chroma for context-aware retrieval.",
     metric: "End-to-end RAG pipeline, deployed via Gradio",
     featured: false,
+    links: [
+      { label: "PDF Research Assistant", url: "https://github.com/Tharindu1527/-PDF_Research_Assistance_with_GroqLM_and_Langchain" },
+      { label: "QBot", url: "https://github.com/Tharindu1527/QBot-chatbot" },
+    ],
   },
   {
     id: "chest-disease",
     title: "Chest Disease Detection & Classification",
-    tags: ["CNN", "ResNet50", "TensorFlow"],
+    tags: ["CNN", "TensorFlow", "Computer Vision"],
     summary:
-      "Fine-tuned ResNet50 with transfer learning on chest X-ray data, applying data augmentation to address class imbalance across 4 disease categories.",
-    metric: "94% classification accuracy",
+      "Deep learning model distinguishing COVID-19, viral pneumonia, bacterial pneumonia, and normal conditions from chest X-ray images, built as a diagnostic aid tool across a balanced 4-class custom dataset.",
+    metric: "94% classification accuracy across 4 disease categories",
     featured: false,
+    links: [{ label: "GitHub", url: "https://github.com/Tharindu1527/Chest_X-Ray_Classification" }],
+  },
+  {
+    id: "elder-watch",
+    title: "Elder Watch — Real-Time Fall Detection",
+    tags: ["YOLOv8", "MediaPipe", "Raspberry Pi 5", "INT8 Quantization", "Edge AI"],
+    summary:
+      "Privacy-preserving fall-detection system running fully on-device on a Raspberry Pi 5: INT8-quantized YOLOv8 for person/fall detection, MediaPipe Pose (33 landmarks) for posture analysis, and optical-flow motion tracking, triggering SMS / Email / Telegram alerts on falls or prolonged inactivity.",
+    metric: "Targeting 15–25 FPS at <30ms/frame and <5W power on a ~6MB quantized model",
+    featured: true,
+    links: [{ label: "GitHub", url: "https://github.com/Tharindu1527/Elder-Watch" }],
+  },
+  {
+    id: "stock-market-mlops",
+    title: "Stock Market Predictor (MLOps)",
+    tags: ["Django", "React", "PostgreSQL", "Docker", "Jenkins CI/CD"],
+    summary:
+      "End-to-end MLOps stock-prediction platform — Django backend, React (Vite) frontend, and PostgreSQL, fully containerised with Docker and wired to a Jenkins pipeline for continuous integration and deployment.",
+    metric: "Full CI/CD pipeline from model to deployed web app via Jenkins + Docker",
+    featured: true,
+    links: [{ label: "GitHub", url: "https://github.com/Tharindu1527/Stock-Market-Predictor-MlOps-" }],
+  },
+  {
+    id: "ai-plagiarism-detector",
+    title: "AI Plagiarism Detector",
+    tags: ["React", "Django", "SQLite", "Cosine Similarity", "LLM"],
+    summary:
+      "Full-stack plagiarism detection system for academic assignments — a Django + SQLite backend running a cosine-similarity engine against a React frontend, with LLM-based web-content comparison in active development. Led as project manager across a 4-person team.",
+    metric: "Assignment-to-assignment similarity detection shipped; LLM web comparison in progress",
+    featured: false,
+    links: [{ label: "GitHub", url: "https://github.com/Tharindu1527/AI-P" }],
+  },
+  {
+    id: "sl-id-ocr-api",
+    title: "Sri Lankan ID Card OCR API",
+    tags: ["Django", "Tesseract OCR", "Docker", "REST API"],
+    summary:
+      "Dockerized Django REST API that extracts structured data — name, NIC number, date of birth, address — from photos of Sri Lankan National ID cards, using Tesseract OCR with Sinhala-language support.",
+    metric: "Single endpoint: ID card image in → structured JSON out",
+    featured: false,
+    links: [{ label: "GitHub", url: "https://github.com/Tharindu1527/REST-API-for-Extract-Sri-Lankan-National-ID-Data" }],
+  },
+  {
+    id: "nigeria-economy-dashboard",
+    title: "Nigeria Economy Price-Surge Dashboard",
+    tags: ["Python", "Time-Series", "GDP/CPI Forecasting", "Data Viz"],
+    summary:
+      "Built during the Omdena Nigeria Chapter collaboration — an interactive dashboard analyzing the price surge across Nigerian essentials (food, transport, healthcare), sourcing data from the Central Bank of Nigeria, NBS, World Bank, and FRED to forecast GDP and CPI trends.",
+    metric: "Live dashboard tracking Naira/USD value and cost-of-living indicators over time",
+    featured: false,
+    links: [{ label: "GitHub", url: "https://github.com/Tharindu1527/-KadunaNigeriaChapter_NigeriaEconomy" }],
+  },
+  {
+    id: "covid19-forecasting",
+    title: "COVID-19 Case & Death Forecasting",
+    tags: ["XGBoost", "Streamlit", "Python", "Time-Series"],
+    summary:
+      "Built during the Omdena Zambia (Kitwe Chapter) collaboration — an XGBoost-based forecasting pipeline predicting COVID-19 case and death counts from vaccination and testing data, served through a multi-page Streamlit dashboard.",
+    metric: "End-to-end pipeline: preprocessing → feature engineering → XGBoost modelling → live dashboard",
+    featured: false,
+    links: [{ label: "GitHub", url: "https://github.com/Tharindu1527/Omdena_KitweChapter_ForecastingCOVID19Dynamics" }],
+  },
+  {
+    id: "resume-analyzer",
+    title: "Resume Analyzer (NLP)",
+    tags: ["Streamlit", "NLP", "PostgreSQL", "PyResParser"],
+    summary:
+      "NLP-powered resume analysis tool that parses PDF resumes to extract skills and contact details, then recommends relevant courses and writing improvements — with an admin panel for visualizing aggregated applicant data.",
+    metric: "Full pipeline: PDF parsing → skill extraction → course recommendation",
+    featured: false,
+    links: [{ label: "GitHub", url: "https://github.com/Tharindu1527/Resume-Analyzer-NLP-" }],
   },
 ];
 

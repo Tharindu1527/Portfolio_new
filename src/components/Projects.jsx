@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { FlaskConical, Sparkles } from "lucide-react";
+import { FaGithub } from "react-icons/fa";
 import { projects } from "../data/profile";
 import SectionHeading from "./SectionHeading";
 
@@ -55,6 +56,22 @@ export default function Projects() {
                 <span className="font-mono text-xs text-[color:var(--color-accent)]">✓ result</span>
                 <span className="font-mono text-xs text-slate-500">{p.metric}</span>
               </div>
+
+              {p.links?.length > 0 && (
+                <div className="mt-4 flex flex-wrap gap-x-4 gap-y-1.5">
+                  {p.links.map((link) => (
+                    <a
+                      key={link.url}
+                      href={link.url}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="flex items-center gap-1.5 font-mono text-xs text-slate-500 transition-colors hover:text-[color:var(--color-accent)]"
+                    >
+                      <FaGithub size={13} /> {link.label}
+                    </a>
+                  ))}
+                </div>
+              )}
             </motion.article>
           ))}
         </div>
