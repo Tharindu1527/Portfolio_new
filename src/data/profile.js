@@ -262,10 +262,65 @@ export const competitions = [
 ];
 
 export const certifications = [
+  {
+    name: "Programming for Everybody (Getting Started with Python)",
+    org: "University of Michigan · Coursera",
+    date: "Mar 2025",
+    url: "https://www.coursera.org/account/accomplishments/verify/3UZLTCSJB5LH",
+  },
+  {
+    name: "IEEEXtreme Region 10 — Certificate of Participation",
+    org: "IEEE",
+    date: "Mar 2025",
+    url: "https://certificate.ieeextreme.org/generate-email-certificate/WGx7YkPUpGAh9K",
+  },
+  {
+    name: "Predicta 1.0 — Certificate of Participation",
+    org: "University of Peradeniya",
+    date: "Feb 2025",
+  },
+  {
+    name: "The Arduino Platform and C Programming",
+    org: "UC Irvine · Coursera",
+    date: "Feb 2025",
+    url: "https://www.coursera.org/account/accomplishments/verify/KO4OL9Y2HON6",
+  },
+  {
+    name: "Reinforcement Learning From Human Feedback",
+    org: "DeepLearning.AI",
+    date: "Jan 2025",
+    url: "https://learn.deeplearning.ai/accomplishments/0edfeee1-7bc8-4e46-994f-f0292debe7b9",
+  },
+  {
+    name: "Generative AI Applications with RAG and LangChain",
+    org: "IBM · Coursera",
+    date: "Jan 2025",
+    url: "https://www.coursera.org/account/accomplishments/verify/IZ1WLX9ZTDHN",
+  },
+  {
+    name: "Xtream ENCODE — Certificate of Appreciation",
+    org: "IEEE",
+    date: "Nov 2024",
+  },
+  {
+    name: "Building Agentic RAG with LlamaIndex",
+    org: "DeepLearning.AI",
+    date: "Oct 2024",
+    url: "https://learn.deeplearning.ai/accomplishments/3bd81ad1-0cc2-46da-9e30-4da787760ae0",
+  },
+  {
+    name: "Introducing Multimodal Llama 3.2",
+    org: "DeepLearning.AI",
+    date: "Oct 2024",
+    url: "https://learn.deeplearning.ai/accomplishments/1eda7e42-40a9-4593-b48a-9b266cce1424",
+  },
+  {
+    name: "Building Your Own Database Agent",
+    org: "DeepLearning.AI",
+    date: "Oct 2024",
+    url: "https://learn.deeplearning.ai/accomplishments/ee8f0975-d8b8-423d-b265-356db3871597",
+  },
   { name: "TensorFlow Developer Professional Certificate", org: "DeepLearning.AI · Coursera", date: "May 2024" },
   { name: "Machine Learning with Python", org: "IBM · Coursera", date: "May 2024" },
   { name: "Neural Networks and Deep Learning", org: "DeepLearning.AI", date: "2024" },
-  { name: "Building Agentic RAG with LlamaIndex", org: "DeepLearning.AI", date: "2024" },
-  { name: "Introducing Multimodal Llama 3.2", org: "DeepLearning.AI", date: "2024" },
-  { name: "Building Your Own Database Agent", org: "DeepLearning.AI", date: "2024" },
 ];
