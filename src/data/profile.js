@@ -8,7 +8,7 @@ export const profile = {
   github: "https://github.com/Tharindu1527",
   githubHandle: "Tharindu1527",
   linkedin: "https://www.linkedin.com/in/tharindu15n/",
-  resume: "/resume.pdf",
+  resume: `${import.meta.env.BASE_URL}resume.pdf`,
   summary:
     "Computer Engineering fresh graduate with hands-on production experience in ML deployment, model fine-tuning, multi-agent AI systems, and statistical analysis. Specialised in Python-based ML pipelines and agentic LLM systems — from data ingestion and feature engineering to model serving — with a track record of shipping applications into real-world environments. Currently conducting active biomedical research applying multimodal ML to physiological signal data.",
 };
