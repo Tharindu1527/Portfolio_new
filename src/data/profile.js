@@ -97,6 +97,7 @@ export const experience = [
 export const projects = [
   {
     id: "slm-rl",
+    image: `${import.meta.env.BASE_URL}images/projects/slm-rl.png`,
     title: "SLM Fine-Tuning with RL Optimisations",
     tags: ["Python", "QLoRA", "GRPO", "PPO"],
     summary:
@@ -107,6 +108,7 @@ export const projects = [
   },
   {
     id: "meetingminute",
+    image: `${import.meta.env.BASE_URL}images/projects/meetingminute.png`,
     title: "MeetingMinute — Multi-Agent Meeting Summariser",
     tags: ["CrewAI", "OpenAI", "AssemblyAI", "MongoDB", "Qdrant", "Composio"],
     summary:
@@ -117,6 +119,7 @@ export const projects = [
   },
   {
     id: "multilingual-chatbot",
+    image: `${import.meta.env.BASE_URL}images/projects/multilingual-chatbot.png`,
     title: "Multilingual AI Chatbot with Persistent Memory",
     tags: ["LangChain", "Gemini", "MongoDB", "Gradio", "HuggingFace"],
     summary:
@@ -127,6 +130,7 @@ export const projects = [
   },
   {
     id: "rag-pdf-tools",
+    image: `${import.meta.env.BASE_URL}images/projects/rag-pdf-tools.png`,
     title: "RAG-Powered PDF Research Tools",
     tags: ["GroqLM", "LangChain", "HuggingFace", "Chroma", "Qdrant", "Gradio"],
     summary:
@@ -140,6 +144,7 @@ export const projects = [
   },
   {
     id: "chest-disease",
+    image: `${import.meta.env.BASE_URL}images/projects/chest-disease.png`,
     title: "Chest Disease Detection & Classification",
     tags: ["CNN", "TensorFlow", "Computer Vision"],
     summary:
@@ -150,6 +155,7 @@ export const projects = [
   },
   {
     id: "elder-watch",
+    image: `${import.meta.env.BASE_URL}images/projects/elder-watch.png`,
     title: "Elder Watch — Real-Time Fall Detection",
     tags: ["YOLOv8", "MediaPipe", "Raspberry Pi 5", "INT8 Quantization", "Edge AI"],
     summary:
@@ -160,6 +166,7 @@ export const projects = [
   },
   {
     id: "stock-market-mlops",
+    image: `${import.meta.env.BASE_URL}images/projects/stock-market-mlops.png`,
     title: "Stock Market Predictor (MLOps)",
     tags: ["Django", "React", "PostgreSQL", "Docker", "Jenkins CI/CD"],
     summary:
@@ -170,6 +177,7 @@ export const projects = [
   },
   {
     id: "ai-plagiarism-detector",
+    image: `${import.meta.env.BASE_URL}images/projects/ai-plagiarism-detector.png`,
     title: "AI Plagiarism Detector",
     tags: ["React", "Django", "SQLite", "Cosine Similarity", "LLM"],
     summary:
@@ -180,6 +188,7 @@ export const projects = [
   },
   {
     id: "sl-id-ocr-api",
+    image: `${import.meta.env.BASE_URL}images/projects/sl-id-ocr-api.png`,
     title: "Sri Lankan ID Card OCR API",
     tags: ["Django", "Tesseract OCR", "Docker", "REST API"],
     summary:
@@ -190,6 +199,7 @@ export const projects = [
   },
   {
     id: "nigeria-economy-dashboard",
+    image: `${import.meta.env.BASE_URL}images/projects/nigeria-economy-dashboard.png`,
     title: "Nigeria Economy Price-Surge Dashboard",
     tags: ["Python", "Time-Series", "GDP/CPI Forecasting", "Data Viz"],
     summary:
@@ -200,6 +210,7 @@ export const projects = [
   },
   {
     id: "covid19-forecasting",
+    image: `${import.meta.env.BASE_URL}images/projects/covid19-forecasting.png`,
     title: "COVID-19 Case & Death Forecasting",
     tags: ["XGBoost", "Streamlit", "Python", "Time-Series"],
     summary:
@@ -210,6 +221,7 @@ export const projects = [
   },
   {
     id: "resume-analyzer",
+    image: `${import.meta.env.BASE_URL}images/projects/resume-analyzer.png`,
     title: "Resume Analyzer (NLP)",
     tags: ["Streamlit", "NLP", "PostgreSQL", "PyResParser"],
     summary:
@@ -273,11 +285,13 @@ export const certifications = [
     org: "IEEE",
     date: "Mar 2025",
     url: "https://certificate.ieeextreme.org/generate-email-certificate/WGx7YkPUpGAh9K",
+    image: `${import.meta.env.BASE_URL}images/certificates/ieeextreme-participation.jpg`,
   },
   {
     name: "Predicta 1.0 — Certificate of Participation",
     org: "University of Peradeniya",
     date: "Feb 2025",
+    image: `${import.meta.env.BASE_URL}images/certificates/predicta-1.0.jpg`,
   },
   {
     name: "The Arduino Platform and C Programming",
@@ -296,11 +310,13 @@ export const certifications = [
     org: "IBM · Coursera",
     date: "Jan 2025",
     url: "https://www.coursera.org/account/accomplishments/verify/IZ1WLX9ZTDHN",
+    image: `${import.meta.env.BASE_URL}images/certificates/generative-ai-rag-langchain.jpg`,
   },
   {
     name: "Xtream ENCODE — Certificate of Appreciation",
     org: "IEEE",
     date: "Nov 2024",
+    image: `${import.meta.env.BASE_URL}images/certificates/xtream-encode.jpg`,
   },
   {
     name: "Building Agentic RAG with LlamaIndex",
@@ -325,12 +341,14 @@ export const certifications = [
     org: "Omdena",
     date: "Aug 2024",
     url: "https://confirm.omdena.com/LCylcoi",
+    image: `${import.meta.env.BASE_URL}images/certificates/omdena-nigeria.jpg`,
   },
   {
     name: "Omdena Kitwe, Zambia Chapter — Certificate of Completion",
     org: "Omdena",
     date: "Jun 2024",
     url: "https://confirm.omdena.com/LCrfy5v",
+    image: `${import.meta.env.BASE_URL}images/certificates/omdena-zambia.jpg`,
   },
   {
     name: "Introduction to Deep Learning & Neural Networks with Keras",

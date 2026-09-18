@@ -82,21 +82,31 @@ export default function Achievements() {
           </div>
           <ul className="grid grid-cols-1 gap-x-6 gap-y-3.5 sm:grid-cols-2 lg:grid-cols-3">
             {visible.map((c) => (
-              <li key={c.name} className="text-xs">
-                {c.url ? (
-                  <a
-                    href={c.url}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="group inline-flex items-start gap-1 text-slate-200 transition-colors hover:text-[color:var(--color-accent)]"
-                  >
-                    <span>{c.name}</span>
-                    <ExternalLink size={11} className="mt-0.5 shrink-0 opacity-0 transition-opacity group-hover:opacity-100" />
-                  </a>
-                ) : (
-                  <div className="text-slate-200">{c.name}</div>
+              <li key={c.name} className="flex items-start gap-3 text-xs">
+                {c.image && (
+                  <img
+                    src={c.image}
+                    alt={`${c.name} certificate`}
+                    loading="lazy"
+                    className="mt-0.5 h-10 w-10 shrink-0 rounded border border-white/10 object-cover"
+                  />
                 )}
-                <div className="font-mono text-[10px] text-slate-600">{c.org} · {c.date}</div>
+                <div className="min-w-0">
+                  {c.url ? (
+                    <a
+                      href={c.url}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="group inline-flex items-start gap-1 text-slate-200 transition-colors hover:text-[color:var(--color-accent)]"
+                    >
+                      <span>{c.name}</span>
+                      <ExternalLink size={11} className="mt-0.5 shrink-0 opacity-0 transition-opacity group-hover:opacity-100" />
+                    </a>
+                  ) : (
+                    <div className="text-slate-200">{c.name}</div>
+                  )}
+                  <div className="font-mono text-[10px] text-slate-600">{c.org} · {c.date}</div>
+                </div>
               </li>
             ))}
           </ul>
