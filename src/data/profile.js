@@ -268,8 +268,15 @@ export const competitions = [
   },
   {
     name: "Veracity Group Gen AI Hackathon",
-    date: "2024",
-    detail: "Finalist — top 15 of 70+ teams in a 1-week competition. Built MeetingMinute, a real-world multi-agent AI summariser using CrewAI.",
+    date: "Mar 2025",
+    detail:
+      "Finalist — top 15 of 70+ teams. Team \"Order of Phoenix\" built and presented MeetingMinute, a real-world multi-agent AI summariser using CrewAI, at the Hatch Works grand finale on March 18, 2025.",
+    postUrl: "https://www.linkedin.com/feed/update/urn:li:activity:7311119264550137856/",
+    images: [
+      `${import.meta.env.BASE_URL}images/achievements/veracity-team-presenting.jpg`,
+      `${import.meta.env.BASE_URL}images/achievements/veracity-solo-presenting.jpg`,
+      `${import.meta.env.BASE_URL}images/achievements/veracity-audience.jpg`,
+    ],
   },
 ];
 

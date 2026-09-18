@@ -59,7 +59,36 @@ export default function Achievements() {
                     <h4 className="text-sm font-semibold text-slate-100">{c.name}</h4>
                     <span className="shrink-0 font-mono text-[10px] text-slate-600">{c.date}</span>
                   </div>
-                  <p className="mt-1 text-xs leading-relaxed text-slate-400">{c.detail}</p>
+                  <p className="mt-1 text-xs leading-relaxed text-slate-400">
+                    {c.detail}
+                    {c.postUrl && (
+                      <>
+                        {" "}
+                        <a
+                          href={c.postUrl}
+                          target="_blank"
+                          rel="noreferrer"
+                          className="inline-flex items-center gap-0.5 text-[color:var(--color-accent)] hover:underline"
+                        >
+                          View post <ExternalLink size={10} />
+                        </a>
+                      </>
+                    )}
+                  </p>
+                  {c.images?.length > 0 && (
+                    <div className="mt-2.5 grid grid-cols-3 gap-1.5">
+                      {c.images.map((img) => (
+                        <a key={img} href={c.postUrl} target="_blank" rel="noreferrer">
+                          <img
+                            src={img}
+                            alt={`${c.name} event photo`}
+                            loading="lazy"
+                            className="aspect-square w-full rounded object-cover transition-opacity hover:opacity-80"
+                          />
+                        </a>
+                      ))}
+                    </div>
+                  )}
                 </div>
               ))}
             </div>
