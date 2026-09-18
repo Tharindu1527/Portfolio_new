@@ -199,7 +199,7 @@ export const projects = [
   },
   {
     id: "nigeria-economy-dashboard",
-    image: `${import.meta.env.BASE_URL}images/projects/nigeria-economy-dashboard.png`,
+    image: `${import.meta.env.BASE_URL}images/projects/nigeria-economy-dashboard.jpg`,
     title: "Nigeria Economy Price-Surge Dashboard",
     tags: ["Python", "Time-Series", "GDP/CPI Forecasting", "Data Viz"],
     summary:
@@ -210,7 +210,7 @@ export const projects = [
   },
   {
     id: "covid19-forecasting",
-    image: `${import.meta.env.BASE_URL}images/projects/covid19-forecasting.png`,
+    image: `${import.meta.env.BASE_URL}images/projects/covid19-forecasting.jpg`,
     title: "COVID-19 Case & Death Forecasting",
     tags: ["XGBoost", "Streamlit", "Python", "Time-Series"],
     summary:
