@@ -28,7 +28,9 @@ export default function Projects() {
                     src={p.image}
                     alt={`${p.title} — repository preview`}
                     loading="lazy"
-                    className="h-full w-full object-cover opacity-90 transition-opacity duration-300 group-hover:opacity-100"
+                    className={`h-full w-full object-cover opacity-90 transition-opacity duration-300 group-hover:opacity-100 ${
+                      p.imagePosition === "top" ? "object-top" : ""
+                    }`}
                   />
                   <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-[#05070a] via-transparent to-transparent" />
                   {p.featured && (

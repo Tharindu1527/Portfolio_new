@@ -108,7 +108,8 @@ export const projects = [
   },
   {
     id: "meetingminute",
-    image: `${import.meta.env.BASE_URL}images/projects/meetingminute.png`,
+    image: `${import.meta.env.BASE_URL}images/projects/meetingminute.webp`,
+    imagePosition: "top",
     title: "MeetingMinute — Multi-Agent Meeting Summariser",
     tags: ["CrewAI", "OpenAI", "AssemblyAI", "MongoDB", "Qdrant", "Composio"],
     summary:
